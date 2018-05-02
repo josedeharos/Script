@@ -1,0 +1,4 @@
+#!/bin/bash
+mv /root/.megarc /etc
+sleep 5
+mv /bin/.megarc /root
