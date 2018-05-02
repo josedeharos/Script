@@ -18,7 +18,7 @@ RUN_SCRIPT=${0##*/}; #The name of the current script at startup
 VESTA_USERS=$(ls "/home/"); #A simple method to obtain a list of users
 LOCAL_BACKUPS_DIR="/backup/"; #Universal path to local backups VestaCP
 LOG="/var/log/$RUN_SCRIPT.log"; #Log file the script
-BACKUP_COUNT=21; #The default value for the number of backups
+BACKUP_COUNT=25; #The default value for the number of backups
 LOG_MAX_ROWS_COUNT=200000; #The maximum number of rows in a log file. In excess of the log is cleared. 200000 lines ~ 50 MiB
 #---------------------------------------------------------#
 #                    Reading options                      #
