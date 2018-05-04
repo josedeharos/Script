@@ -3,7 +3,7 @@ set logfile syslog facility log_daemon
 set mailserver vSMTPHostname port vSMTPPort username "vSMTPEmail" password "vSMTPPassword"
 set mail-format { from: vSMTPEmail }
 set alert vEmail
-set httpd port 2812 and allow admin:"vPassword"
+set httpd port 2812 vPassword
 
 
 check process SSH with pidfile /var/run/sshd.pid
