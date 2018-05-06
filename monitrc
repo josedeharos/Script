@@ -68,7 +68,7 @@ check process Vesta-PHP with pidfile /var/run/vesta-php.pid
   start program = "/sbin/service vesta restart"
   stop program = "/sbin/service vesta stop"
 
-check process MariaDB with pidfile /var/run/mariadb/mariadb.pid
+check process MariaDB with pidfile /var/lib/mysql/vDominio.pid
   group mysql
   start program = "/sbin/service mariadb restart"
   stop program = "/sbin/service mariadb stop"
