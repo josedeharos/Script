@@ -1,6 +1,6 @@
-DEVICE="vEth0"
+DEVICE="vEthred"
 BOOTPROTO=static
-IPADDR="vIP"
+IPADDR="vIPaddress"
 NETMASK="255.255.255.255"
-BROADCAST="vIP"
+BROADCAST="vIPaddress"
 ONBOOT=yes
