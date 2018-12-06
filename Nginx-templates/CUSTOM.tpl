@@ -66,3 +66,9 @@ server {
 
     include     %home%/%user%/conf/web/nginx.%domain_idn%.conf*;
 }
+
+server {
+    listen %ip%:%web_port%;
+    server_name %ip%;
+    return 404;
+}
