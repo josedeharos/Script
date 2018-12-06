@@ -70,3 +70,9 @@ server {
 
     include     %home%/%user%/conf/web/snginx.%domain_idn%.conf*;
 }
+
+server {
+    listen %ip%:%web_ssl_port% ssl http2;
+    server_name %ip%;
+    return 404;
+}
