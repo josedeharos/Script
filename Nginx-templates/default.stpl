@@ -1,6 +1,6 @@
 server {
     listen      %ip%:%web_ssl_port% ssl http2;
-    server_name %domain_idn%;
+    server_name %domain_idn% %alias_idn%;
     root        %sdocroot%;
     index       index.php index.html index.htm;
     access_log  /var/log/nginx/domains/%domain%.log combined;
@@ -52,13 +52,4 @@ server {
     include     /etc/nginx/conf.d/webmail.inc*;
 
     include     %home%/%user%/conf/web/snginx.%domain%.conf*;
-}
-
-server {
-    listen      %ip%:%web_ssl_port%;
-    server_name %alias_idn%;
-    return      301 https://%domain_idn%$request_uri;
-    ssl         on;
-    ssl_certificate      %ssl_pem%;
-    ssl_certificate_key  %ssl_key%;
 }
